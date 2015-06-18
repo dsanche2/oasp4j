@@ -141,5 +141,8 @@
     <property name="accessDeniedHandler" ref="ApplicationAccessDeniedHandler"/>
   </bean>
 
+  <bean id="CORSFilter" class="io.oasp.gastronomy.restaurant.general.security.CORSFilter">
+    <property name="disabled" value="${corsDisabled}"/>
+  </bean>
 
 </beans>
